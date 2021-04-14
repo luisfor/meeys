@@ -21,6 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // convert request to json
 app.use(bodyParser.json());
 
+//synchronizing the models in the database
+db.conexion.sync();
+
 // Routes simple
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to Meeys Apis" });
@@ -28,7 +31,7 @@ app.get("/", (req, res) => {
 
 
 //Routes
-
+require('./routes/user')(app);
 
 
 // Port run Server

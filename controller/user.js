@@ -323,13 +323,7 @@ exports.findIdentificacion = (req, res) => {
     where: { identification: search },
     attributes: {
       exclude: ["password"],
-    },
-    include: [
-      {
-        model: estado,
-        as: "estado",
-      },
-    ],
+    }
   })
     .then((data) => {
       const response = getPagingData(data, page, limit);
@@ -343,29 +337,21 @@ exports.findIdentificacion = (req, res) => {
 };
 
 //search by email
-exports.findEmail = (req, res) => {};
-
-//search in activedirectory
-exports.activedirectory = (req, res) => {
-  let configActive = {
-    url: "ldap://condorlabs.io",
-    baseDN: "dc=condorlabs,dc=io",
-  };
-
-  let ad = new ActiveDirectory(configActive);
-  let username = "24x7@condorlabs.io";
-  let password = "Macgen231+";
-
-  // Authenticate
-  ad.authenticate(username, password, function (err, auth) {
-    if (err) {
-      console.log("ERROR: " + JSON.stringify(err));
-      return;
+exports.findEmail = (req, res) => {
+  const search = req.params.search;
+  User.findAll({
+    where: { email: search },
+    attributes: {
+      exclude: ["password"],
     }
-    if (auth) {
-      console.log("Authenticated!");
-    } else {
-      console.log("Authentication failed!");
-    }
-  });
+  })
+    .then((data) => {
+      const response = getPagingData(data, page, limit);
+      res.send(response);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "An error occurred while searching for users",
+      });
+    });
 };

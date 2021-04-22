@@ -219,7 +219,7 @@ exports.update = (req, res) => {
   //validate the collected data
   try {
     validate_fname = !validator.isEmpty(params.fname);
-    validate_sname = !validator.isEmpty(params.sname);
+    //validate_sname = !validator.isEmpty(params.sname);
     validate_flastname = !validator.isEmpty(params.flastname);
     validate_slastname = !validator.isEmpty(params.slastname);
     //validate_identification = !validator.isEmpty(params.identification);

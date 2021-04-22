@@ -3,7 +3,5 @@ module.exports = (app) => {
 
     let router = require('express').Router();
 
-    router.post('/activedirectory', user.activedirectory);
-
     app.use('/api/user', router);
 };

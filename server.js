@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 
 //Routes
 require('./routes/user')(app);
+require('./routes/state')(app);
 
 
 // Port run Server

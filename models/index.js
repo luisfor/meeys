@@ -43,6 +43,7 @@ db.conexion = conexion;
 
 //import of the models
 db.user = require("./user")(conexion, Sequelize);
+db.state = require("./state")(conexion, Sequelize);
 
 
 module.exports = db;

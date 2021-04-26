@@ -3,7 +3,6 @@ const { pool } = require("../config/db.config");
 const moment = require("moment");
 const bcrypt = require("bcrypt-nodejs");
 const jwt = require("../services/jwt");
-const ActiveDirectory = require("activedirectory");
 
 const User = db.user;
 const Op = db.Sequelize.Op;

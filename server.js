@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 //Routes
 require('./routes/user')(app);
 require('./routes/state')(app);
-
+require('./routes/colour')(app);
 
 // Port run Server
 const PORT = process.env.PORT || 3000;

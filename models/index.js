@@ -45,5 +45,13 @@ db.conexion = conexion;
 db.user = require("./user")(conexion, Sequelize);
 db.state = require("./state")(conexion, Sequelize);
 db.colour = require("./colour")(conexion, Sequelize);
+db.type_idcard = require("./type_idcard")(conexion, Sequelize);
+
+
+//table association type of identification card with status fk
+db.type_idcard.belongsTo(db.state, {
+  foreignKey: 'fktype_idcardState',
+  as: 'state',
+});
 
 module.exports = db;

@@ -42,14 +42,14 @@ exports.save = (req, res) => {
     //validate that all data is true
     if (validate_colour) {
       //search if the database exists
-      Colour.count({ where: { colour: params.colour } }).then((count) => {
+      Colour.count({ where: { colour: params.colour }}).then((count) => {
         if (count != 0) {
           return res.status(400).send({
             message: "this colour was registered",
           });
         } else {
           const colour = {
-            colour: params.colour,
+            colour: params.colour.toUpperCase(),
             createdAt: moment().format("YYYY-MM-DD"),
             updatedAt: moment().format("YYYY-MM-DD"),
           };
@@ -134,7 +134,7 @@ exports.update = (req, res) => {
 
   if (validate_colour) {
     const colour = {
-      colour: params.colour,
+      colour: params.colour.toUpperCase(),
       updatedAt: moment().format("YYYY-MM-DD"),
     };
 

@@ -1,6 +1,6 @@
 const db = require("../models");
 const { pool } = require("../config/db.config");
-const moment = require("moment")
+const moment = require("moment");
 
 const Type_idcard = db.type_idcard;
 const State = db.state;
@@ -31,8 +31,7 @@ exports.save = (req, res) => {
   let params = req.body;
 
   //variables
-  let validate_name,
-    validate_idstate;
+  let validate_name, validate_idstate;
 
   //validate the collected data
   try {
@@ -45,11 +44,8 @@ exports.save = (req, res) => {
   }
 
   //Validate that all data is true
-  if (
-    validate_name &&
-    validate_idstate
-  ) {
-        //search if the database exists
+  if (validate_name && validate_idstate) {
+    //search if the database exists
     Type_idcard.count({ where: { name: params.name } }).then((count) => {
       if (count != 0) {
         return res.status(400).send({
@@ -93,10 +89,10 @@ exports.findAll = (req, res) => {
     limit,
     offset,
     include: [
-        {
-            model: State,
-            as: "state",
-        }
+      {
+        model: State,
+        as: "state",
+      },
     ],
   })
     .then((data) => {
@@ -113,15 +109,14 @@ exports.findAll = (req, res) => {
 //search type idcard by id
 exports.findOne = (req, res) => {
   const id = req.params.id;
-  Type_idcard.findByPk(id,
-    {
-        include: [
-            {
-                model: State,
-                as: 'state',
-            },
-        ],
-    })
+  Type_idcard.findByPk(id, {
+    include: [
+      {
+        model: State,
+        as: "state",
+      },
+    ],
+  })
     .then((data) => {
       if (data != null) {
         res.send(data);
@@ -141,16 +136,15 @@ exports.findOne = (req, res) => {
 //search type idcard by name
 exports.findName = (req, res) => {
   const search = req.params.search;
-  Type_idcard.findAll(
-    {
-        where: {name: search},
-        include: [
-            {
-                model: State,
-                as: 'state',
-            },
-        ],
-    })
+  Type_idcard.findAll({
+    where: { name: search },
+    include: [
+      {
+        model: State,
+        as: "state",
+      },
+    ],
+  })
     .then((data) => {
       if (data != null) {
         res.send(data);
@@ -167,5 +161,51 @@ exports.findName = (req, res) => {
     });
 };
 
+//update type idcard
+exports.update = (req, res) => {
+  const id = req.params.id;
+  let params = req.body;
 
+  //variables
+  let validate_name, validate_state;
+  //validate the collected data
+  try {
+    validate_name = !validator.isEmpty(params.name);
+    validate_state = !validator.isEmpty(params.state);
+  } catch (error) {
+    return res.status(400).send({
+      message: "missing data to send",
+    });
+  }
 
+  if (validate_name && validate_state) {
+    const type_idcard = {
+      name: req.params.name,
+      updatedAt: moment().format("YYYY-MM-DD"),
+      fktype_idcardState: req.body.state,
+    };
+
+    Type_idcard.update(type_idcard, { where: { idtype_idcard: id } })
+    .then((num) => {
+      if (num == 1) {
+        res.status(200).send({
+          message: "the idcard type has been updated successfully",
+        });
+      } else {
+        res.status(500).send({
+          message: `could not update idcard type with id: ${id}`,
+        });
+      }
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: `error add update idcard type with id: ${id}`,
+      });
+    });
+
+  } else {
+    return res.status(400).send({
+      message: "missing data to send",
+    });
+  }
+};

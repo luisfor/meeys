@@ -209,3 +209,28 @@ exports.update = (req, res) => {
     });
   }
 };
+
+//Delete type idcard
+exports.delete = (req, res) => {
+    const id = req.params.id;
+    Type_idcard.destroy({
+      where: { idtype_idcard: id },
+    })
+      .then((num) => {
+        if (num == 1) {
+          res.send({
+            message: "The type idcard was successfully removed!",
+          });
+        } else {
+          res.send({
+            message: ` Cannot remove type idcard with id = ${id}. Maybe the type idcard was not found! `,
+          });
+        }
+      })
+      .catch(
+          (error) => {
+          res.status(500).send({
+            message: `Could not remove type idcard with id ${id}`,
+          });
+      });
+  };

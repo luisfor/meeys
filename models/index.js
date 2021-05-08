@@ -46,11 +46,38 @@ db.user = require("./user")(conexion, Sequelize);
 db.state = require("./state")(conexion, Sequelize);
 db.colour = require("./colour")(conexion, Sequelize);
 db.type_idcard = require("./type_idcard")(conexion, Sequelize);
-
+db.position = require("./position")(conexion, Sequelize);
+db.grade = require("./grade")(conexion, Sequelize);
+db.area = require("./area")(conexion, Sequelize);
+db.team = require("./team")(conexion, Sequelize);
 
 //table association type of identification card with status fk
 db.type_idcard.belongsTo(db.state, {
   foreignKey: 'fktype_idcardState',
+  as: 'state',
+});
+
+//table association of position with status fk
+db.position.belongsTo(db.state, {
+  foreignKey: 'fkpositionState',
+  as: 'state',
+});
+
+//table association of grade with status fk
+db.grade.belongsTo(db.state, {
+  foreignKey: 'fkgradeState',
+  as: 'state',
+});
+
+//table association of area with status fk
+db.area.belongsTo(db.state, {
+  foreignKey: 'fkareaState',
+  as: 'state',
+});
+
+//table association of team with status fk
+db.team.belongsTo(db.state, {
+  foreignKey: 'fkteamState',
   as: 'state',
 });
 

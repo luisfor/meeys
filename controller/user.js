@@ -71,7 +71,7 @@ exports.save = (req, res) => {
   ) {
     //
     User.count({
-      where: { identification: params.identification },
+      where: { dentification: params.identification },
     }).then((count) => {
       if (count != 0) {
         return res.status(400).send({
@@ -90,15 +90,15 @@ exports.save = (req, res) => {
               const password_encrypt = hash;
 
               const user = {
-                fname: params.fname,
-                sname: params.sname,
-                flastname: params.flastname,
-                slastname: params.slastname,
-                email: params.email,
+                fname: params.fname.charAt(0).toUpperCase(),
+                sname: params.sname.charAt(0).toUpperCase(),
+                flastname: params.flastname.charAt(0).toUpperCase(),
+                slastname: params.slastname.charAt(0).toUpperCase(),
+                email: params.email.toLowerCase(),
                 password: params.password,
                 createAt: moment().format("YYYY-MM-DD"),
                 updateAt: moment().format("YYYY-MM-DD"),
-                //fkUserState: params.idState,
+                fkUserState: params.idState,
                 //fkUserIdentification: params.identification,
                 //fkUserTipoDoc: params.tipodocumento,
                 //fkUserCargo: params.cargo
@@ -207,11 +207,12 @@ exports.update = (req, res) => {
 
   //save data
   const user = {
-    fname: params.fname,
-    sname: params.sname,
-    flastname: params.flastname,
-    slastname: params.slastname,
-    email: params.email,
+    fname: params.fname.charAt(0).toUpperCase(),
+    sname: params.sname.charAt(0).toUpperCase(),
+    flastname: params.flastname.charAt(0).toUpperCase(),
+    slastname: params.slastname.charAt(0).toUpperCase(),
+    email: params.email.toLowerCase(),
+    fkUserState: params.idState,
     updateAt: moment().format("YYYY-MM-DD"),
   };
 
@@ -275,8 +276,8 @@ exports.findAll = (req, res) => {
     },
     include: [
       {
-        model: estado,
-        as: "estado",
+        model: state,
+        as: "userstate",
       },
     ],
   })
@@ -300,8 +301,8 @@ exports.findOne = (req, res) => {
     },
     include: [
       {
-        model: estado,
-        as: "estado",
+        model: state,
+        as: "userstate",
       },
     ],
   })

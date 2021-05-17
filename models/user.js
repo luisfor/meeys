@@ -21,7 +21,6 @@ module.exports = (sequelize, Sequelize) => {
       indexes: [
         {unique:true, fields:['email']},
         {unique:true, isNumeric: true, fields:['identification']},
-        {unique:true, isNumeric: true, fields:['idState']},
         {unique:true, isNumeric: true, fields:['iduser']}
       ],
       freezeTableName: true,

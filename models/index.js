@@ -4,29 +4,29 @@ const db = {};
 
 const Sequelize = require("sequelize");
 const conexion = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-    host: dbConfig.HOST,
-    port: dbConfig.PORT,
-    dialect: dbConfig.dialect,
-    operatorsAliases: false,
-    benchmark: false,
-    logging: false,
-    force: false,
-    alter: true,
-    define:{timestamps: false},
-    dialectOptions: {
-      timezone: process.env.db_timezone
-    },
-    //database connection pool
-    pool: {
-        //maximum in connections
-        max: dbConfig.pool.max,
-        //minimum number of connections
-        min: dbConfig.pool.min,
-        //maximum time in millisecond in which it will try to obtain the connection before throwing an error
-        acquire: dbConfig.pool.acquire,
-        //maximum time in milliseconds that a connection can be idle before being released
-        idle: dbConfig.pool.idle,
-      }
+  host: dbConfig.HOST,
+  port: dbConfig.PORT,
+  dialect: dbConfig.dialect,
+  operatorsAliases: false,
+  benchmark: false,
+  logging: false,
+  force: false,
+  alter: true,
+  define: { timestamps: false },
+  dialectOptions: {
+    timezone: process.env.db_timezone,
+  },
+  //database connection pool
+  pool: {
+    //maximum in connections
+    max: dbConfig.pool.max,
+    //minimum number of connections
+    min: dbConfig.pool.min,
+    //maximum time in millisecond in which it will try to obtain the connection before throwing an error
+    acquire: dbConfig.pool.acquire,
+    //maximum time in milliseconds that a connection can be idle before being released
+    idle: dbConfig.pool.idle,
+  },
 });
 
 //Verification of the connection to the server
@@ -35,7 +35,7 @@ conexion
   .then(() => {
     console.log("established connection");
   })
-  .catch(err => {
+  .catch((err) => {
     console.error("problems in the connection with the database", err);
   });
 
@@ -54,38 +54,43 @@ db.team = require("./team")(conexion, Sequelize);
 
 //table association of state with colour fk
 db.state.belongsTo(db.colour, {
-  foreignKey: 'fkcolour_idstateColour',
-  as: 'fkcolour',
+  foreignKey: "fkcolour_idstateColour",
+  as: "fkcolour",
 });
 
 //table association type of identification card with status fk
 db.type_idcard.belongsTo(db.state, {
-  foreignKey: 'fktype_idcardState',
-  as: 'state',
+  foreignKey: "fktype_idcardState",
+  as: "state",
 });
 
 //table association of position with status fk
 db.position.belongsTo(db.state, {
-  foreignKey: 'fkpositionState',
-  as: 'state',
+  foreignKey: "fkpositionState",
+  as: "state",
 });
 
 //table association of grade with status fk
 db.grade.belongsTo(db.state, {
-  foreignKey: 'fkgradeState',
-  as: 'state',
+  foreignKey: "fkgradeState",
+  as: "state",
 });
 
 //table association of area with status fk
 db.area.belongsTo(db.state, {
-  foreignKey: 'fkareaState',
-  as: 'state',
+  foreignKey: "fkareaState",
+  as: "state",
 });
 
 //table association of team with status fk
 db.team.belongsTo(db.state, {
-  foreignKey: 'fkteamState',
-  as: 'state',
+  foreignKey: "fkteamState",
+  as: "state",
+});
+//table association user with status fk
+db.user.belongsTo(db.state, {
+  foreignKey: "fkuserState",
+  as: "userState",
 });
 
 module.exports = db;

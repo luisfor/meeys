@@ -8,7 +8,6 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
       },
       name: Sequelize.STRING,
-      colour: Sequelize.STRING,
       createdAt: Sequelize.DATEONLY,
       updatedAt: Sequelize.DATEONLY,
     },

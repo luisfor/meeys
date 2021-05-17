@@ -52,6 +52,12 @@ db.grade = require("./grade")(conexion, Sequelize);
 db.area = require("./area")(conexion, Sequelize);
 db.team = require("./team")(conexion, Sequelize);
 
+//table association of state with colour fk
+db.state.belongsTo(db.colour, {
+  foreignKey: 'fkcolour_idstateColour',
+  as: 'fkcolour',
+});
+
 //table association type of identification card with status fk
 db.type_idcard.belongsTo(db.state, {
   foreignKey: 'fktype_idcardState',

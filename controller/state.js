@@ -3,6 +3,7 @@ const { pool } = require("../config/db.config");
 const moment = require("moment");
 
 const State = db.state;
+const Colour = db.colour;
 const Op = db.Sequelize.Op;
 
 let validator = require("validator");
@@ -28,11 +29,11 @@ exports.save = (req, res) => {
   //collect the post parameters
   let params = req.body;
   //variables
-  let validate_state, validate_colour;
+  let validate_state, validate_idcolour;
   //validate the collected data
   try {
     validate_state = !validator.isEmpty(params.name);
-    validate_colour = !validator.isEmpty(params.colour);
+    validate_idcolour = !validator.isEmpty(params.idcolour);
   } catch (error) {
     return res.status(400).send({
       message: "missing data to send",
@@ -40,7 +41,7 @@ exports.save = (req, res) => {
   }
 
   //validate that all data is true
-  if (validate_state && validate_colour) {
+  if (validate_state && validate_idcolour) {
     //search if the database exists
     State.count({ where: { name: params.name } }).then((count) => {
       if (count != 0) {
@@ -53,6 +54,7 @@ exports.save = (req, res) => {
           colour: params.colour,
           createdAt: moment().format("YYYY-MM-DD"),
           updatedAt: moment().format("YYYY-MM-DD"),
+          fkcolour_idstateColour: params.idcolour,
         };
 
         //save state
@@ -84,6 +86,12 @@ exports.findAll = (req, res) => {
   State.findAndCountAll({
     limit,
     offset,
+    include: [
+      {
+        model: Colour,
+        as: "colour",
+      },
+    ],
   })
     .then((data) => {
       const response = getPagingData(data, page, limit);
@@ -148,18 +156,18 @@ exports.update = (req, res) => {
   //validate the collected data
   try {
     validate_state = !validator.isEmpty(params.name);
-    validate_colour = !validator.isEmpty(params.colour);
+    validate_idcolour = !validator.isEmpty(params.idcolour);
   } catch (error) {
     return res.status(400).send({
       message: "missing data to send",
     });
   }
 
-  if (validate_state && validate_colour) {
+  if (validate_state && validate_idcolour) {
     const state = {
       name: params.name,
-      colour: params.colour,
       updatedAt: moment().format("YYYY-MM-DD"),
+      fkcolour_idstateColour: params.idcolour,
     };
 
     State.update(state, {
@@ -206,10 +214,9 @@ exports.delete = (req, res) => {
         });
       }
     })
-    .catch(
-        (error) => {
-        res.status(500).send({
-          message: `Could not remove status with id ${id}`,
-        });
+    .catch((error) => {
+      res.status(500).send({
+        message: `Could not remove status with id ${id}`,
+      });
     });
 };

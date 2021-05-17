@@ -54,4 +54,10 @@ db.type_idcard.belongsTo(db.state, {
   as: 'state',
 });
 
+//table association user with status fk
+db.user.belongsTo(db.state, {
+  foreignKey: 'fkuserState',
+  as: 'userState',
+});
+
 module.exports = db;

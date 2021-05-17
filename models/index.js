@@ -7,11 +7,12 @@ const conexion = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
     port: dbConfig.PORT,
     dialect: dbConfig.dialect,
-    operatorsAliases: 0,
+    operatorsAliases: false,
     benchmark: false,
     logging: false,
     force: false,
     alter: true,
+    define:{timestamps: false},
     dialectOptions: {
       timezone: process.env.db_timezone
     },

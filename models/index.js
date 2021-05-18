@@ -55,7 +55,7 @@ db.team = require("./team")(conexion, Sequelize);
 //table association of state with colour fk
 db.state.belongsTo(db.colour, {
   foreignKey: "fkcolour_idstateColour",
-  as: "fkcolour",
+  as: "colour",
 });
 
 //table association type of identification card with status fk
@@ -87,6 +87,7 @@ db.team.belongsTo(db.state, {
   foreignKey: "fkteamState",
   as: "state",
 });
+
 //table association user with status fk
 db.user.belongsTo(db.state, {
   foreignKey: "fkuserState",

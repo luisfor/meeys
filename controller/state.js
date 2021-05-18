@@ -107,7 +107,14 @@ exports.findAll = (req, res) => {
 //search state by id
 exports.findOne = (req, res) => {
   const id = req.params.id;
-  State.findByPk(id)
+  State.findByPk(id, {
+    include: [
+      {
+        model: Colour,
+        as: 'colour',
+      },
+    ],
+  })
     .then((data) => {
       if (data != null) {
         res.send(data);
@@ -129,6 +136,12 @@ exports.findName = (req, res) => {
   const search = req.params.search;
   State.findAll({
     where: { name: search },
+    include: [
+      {
+        model: Colour,
+        as: 'colour',
+      },
+    ],
   })
     .then((data) => {
       if (data.length > 0) {

@@ -88,10 +88,16 @@ db.team.belongsTo(db.state, {
   as: "state",
 });
 
+//table association user with type of identification fk
+db.user.belongsTo(db.type_idcard, {
+  foreignKey: 'fkuserType_idcard',
+  as: 'type_idcard',
+});
+
 //table association user with status fk
 db.user.belongsTo(db.state, {
-  foreignKey: "fkuserState",
-  as: "userState",
+  foreignKey: 'fkuserState',
+  as: 'state',
 });
 
 module.exports = db;

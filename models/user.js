@@ -12,7 +12,6 @@ module.exports = (sequelize, Sequelize) => {
       identification: Sequelize.BIGINT,
       email: Sequelize.STRING,
       password: Sequelize.STRING,
-      idState: Sequelize.BIGINT,
       createdAt: Sequelize.DATEONLY,
       updatedAt: Sequelize.DATEONLY,
   

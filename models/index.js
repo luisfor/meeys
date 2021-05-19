@@ -57,13 +57,13 @@ db.type_idcard.belongsTo(db.state, {
 //table association user with type of identification fk
 db.user.belongsTo(db.type_idcard, {
   foreignKey: 'fkuserType_idcard',
-  as: 'typeIdcard',
+  as: 'type_idcard',
 });
 
 //table association user with status fk
 db.user.belongsTo(db.state, {
   foreignKey: 'fkuserState',
-  as: 'userState',
+  as: 'state',
 });
 
 module.exports = db;

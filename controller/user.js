@@ -114,17 +114,16 @@ exports.save = (req, res) => {
                 slastname: params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
                 email: params.email.toLowerCase(),
                 password: params.password,
-                createAt: moment().format("YYYY-MM-DD"),
-                updateAt: moment().format("YYYY-MM-DD"),
+                createdAt: moment().format("YYYY-MM-DD"),
+                updatedAt: moment().format("YYYY-MM-DD"),
                 identification: params.identification,
-                fkUserState: params.idState,
-                fkUserTypeidcard: params.idtypeidcard,
-                //fkUserTipoDoc: params.tipodocumento,
+                fkuserState: params.idState,
+                fkuserType_idcard: params.idtypeidcard,
                 //fkUserCargo: params.cargo
               };
               console.log(user);
               //save user
-              /*User.create(user)
+              User.create(user)
                 .then((data) => {
                   res.send({
                     status: "success",
@@ -136,7 +135,7 @@ exports.save = (req, res) => {
                     message:
                       err.message || "there was an error saving the user.",
                   });
-                });*/
+                });
             });
           }
         });

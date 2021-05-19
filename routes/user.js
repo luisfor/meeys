@@ -3,5 +3,8 @@ module.exports = (app) => {
 
     let router = require('express').Router();
 
+    //Create a new user
+    router.post('/', user.save);
+
     app.use('/api/user', router);
 };

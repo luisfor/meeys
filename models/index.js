@@ -54,6 +54,12 @@ db.type_idcard.belongsTo(db.state, {
   as: 'state',
 });
 
+//table association user with type of identification fk
+db.user.belongsTo(db.type_idcard, {
+  foreignKey: 'fkuserType_idcard',
+  as: 'typeIdcard',
+});
+
 //table association user with status fk
 db.user.belongsTo(db.state, {
   foreignKey: 'fkuserState',

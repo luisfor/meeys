@@ -167,22 +167,22 @@ exports.update = (req, res) => {
   let params = req.body;
 
   //variables
-  let validate_name, validate_state;
+  let validate_name, validate_idstate;
   //validate the collected data
   try {
     validate_name = !validator.isEmpty(params.name);
-    validate_state = !validator.isEmpty(params.state);
+    validate_idstate = !validator.isEmpty(params.idstate);
   } catch (error) {
     return res.status(400).send({
       message: "missing data to send",
     });
   }
 
-  if (validate_name && validate_state) {
+  if (validate_name && validate_idstate) {
     const type_idcard = {
       name: req.params.name,
       updatedAt: moment().format("YYYY-MM-DD"),
-      fktype_idcardState: req.body.state,
+      fktype_idcardState: req.body.idstate,
     };
 
     Type_idcard.update(type_idcard, { where: { idtype_idcard: id } })

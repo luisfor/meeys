@@ -5,9 +5,12 @@ const bcrypt = require("bcrypt-nodejs");
 const jwt = require("../services/jwt");
 
 const User = db.user;
+const State = db.state;
+const Type_idcard = db.type_idcard;
 const Op = db.Sequelize.Op;
 
 let validator = require("validator");
+const type_idcard = require("../models/type_idcard");
 
 //paging functions
 const getPagination = (page, size) => {
@@ -31,6 +34,8 @@ exports.save = (req, res) => {
   //collect the post parameters
   let params = req.body;
 
+  console.log(params);
+
   //variables
   let validate_fname,
     validate_sname,
@@ -39,7 +44,8 @@ exports.save = (req, res) => {
     validate_identification,
     validate_email,
     validate_password,
-    validate_idState;
+    validate_idState,
+    validate_idtypeidcard;
 
   //validate the collected data
   try {
@@ -49,10 +55,21 @@ exports.save = (req, res) => {
     validate_slastname = !validator.isEmpty(params.slastname);
     validate_identification = !validator.isEmpty(params.identification);
     validate_email =
-      !validator.isEmpty(params.email) && validator.isEmail(parmas.email);
+      !validator.isEmpty(params.email) && validator.isEmail(params.email);
     validate_password = !validator.isEmpty(params.password);
     validate_idState = !validator.isEmpty(params.idState);
+    validate_idtypeidcard = !validator.isEmpty(params.idtypeidcard);
+
   } catch (error) {
+    console.log(validate_fname,
+      validate_sname,
+      validate_flastname,
+      validate_slastname,
+      validate_identification,
+      validate_email,
+      validate_password,
+      validate_idState,
+      validate_idtypeidcard);
     return res.status(400).send({
       message: "missing data to send",
     });
@@ -67,11 +84,12 @@ exports.save = (req, res) => {
     validate_identification &&
     validate_email &&
     validate_password &&
-    validate_idState
+    validate_idState &&
+    validate_idtypeidcard
   ) {
     //
     User.count({
-      where: { dentification: params.identification },
+      where: { identification: params.identification },
     }).then((count) => {
       if (count != 0) {
         return res.status(400).send({
@@ -90,21 +108,23 @@ exports.save = (req, res) => {
               const password_encrypt = hash;
 
               const user = {
-                fname: params.fname.charAt(0).toUpperCase(),
-                sname: params.sname.charAt(0).toUpperCase(),
-                flastname: params.flastname.charAt(0).toUpperCase(),
-                slastname: params.slastname.charAt(0).toUpperCase(),
+                fname: params.fname.charAt(0).toUpperCase() + params.fname.slice(1),
+                sname: params.sname.charAt(0).toUpperCase() + params.sname.slice(1),
+                flastname: params.flastname.charAt(0).toUpperCase() + params.flastname.slice(1),
+                slastname: params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
                 email: params.email.toLowerCase(),
                 password: params.password,
                 createAt: moment().format("YYYY-MM-DD"),
                 updateAt: moment().format("YYYY-MM-DD"),
+                identification: params.identification,
                 fkUserState: params.idState,
-                //fkUserIdentification: params.identification,
+                fkUserTypeidcard: params.idtypeidcard,
                 //fkUserTipoDoc: params.tipodocumento,
                 //fkUserCargo: params.cargo
               };
+              console.log(user);
               //save user
-              User.create(user)
+              /*User.create(user)
                 .then((data) => {
                   res.send({
                     status: "success",
@@ -116,7 +136,7 @@ exports.save = (req, res) => {
                     message:
                       err.message || "there was an error saving the user.",
                   });
-                });
+                });*/
             });
           }
         });
@@ -207,10 +227,10 @@ exports.update = (req, res) => {
 
   //save data
   const user = {
-    fname: params.fname.charAt(0).toUpperCase(),
-    sname: params.sname.charAt(0).toUpperCase(),
-    flastname: params.flastname.charAt(0).toUpperCase(),
-    slastname: params.slastname.charAt(0).toUpperCase(),
+    fname: params.fname.charAt(0).toUpperCase() + params.fname.slice(1),
+    sname: params.sname.charAt(0).toUpperCase() + params.sname.slice(1),
+    flastname: params.flastname.charAt(0).toUpperCase() + params.flastname.slice(1),
+    slastname: params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
     email: params.email.toLowerCase(),
     fkUserState: params.idState,
     updateAt: moment().format("YYYY-MM-DD"),
@@ -276,8 +296,12 @@ exports.findAll = (req, res) => {
     },
     include: [
       {
-        model: state,
-        as: "userstate",
+        model: State,
+        as: "state",
+      },
+      {
+        model: Type_idcard,
+        as: 'type_idcard',
       },
     ],
   })

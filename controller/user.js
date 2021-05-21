@@ -7,10 +7,9 @@ const jwt = require("../services/jwt");
 const User = db.user;
 const State = db.state;
 const Type_idcard = db.type_idcard;
-const Op = db.Sequelize.Op;
+const Colour = db.colour;
 
 let validator = require("validator");
-const type_idcard = require("../models/type_idcard");
 
 //paging functions
 const getPagination = (page, size) => {
@@ -34,11 +33,8 @@ exports.save = (req, res) => {
   //collect the post parameters
   let params = req.body;
 
-  console.log(params);
-
   //variables
   let validate_fname,
-    validate_sname,
     validate_flastname,
     validate_slastname,
     validate_identification,
@@ -50,7 +46,7 @@ exports.save = (req, res) => {
   //validate the collected data
   try {
     validate_fname = !validator.isEmpty(params.fname);
-    validate_sname = !validator.isEmpty(params.sname);
+    //validate_sname = !validator.isEmpty(params.sname);
     validate_flastname = !validator.isEmpty(params.flastname);
     validate_slastname = !validator.isEmpty(params.slastname);
     validate_identification = !validator.isEmpty(params.identification);
@@ -59,17 +55,7 @@ exports.save = (req, res) => {
     validate_password = !validator.isEmpty(params.password);
     validate_idState = !validator.isEmpty(params.idState);
     validate_idtypeidcard = !validator.isEmpty(params.idtypeidcard);
-
   } catch (error) {
-    console.log(validate_fname,
-      validate_sname,
-      validate_flastname,
-      validate_slastname,
-      validate_identification,
-      validate_email,
-      validate_password,
-      validate_idState,
-      validate_idtypeidcard);
     return res.status(400).send({
       message: "missing data to send",
     });
@@ -78,7 +64,6 @@ exports.save = (req, res) => {
   //Validate that all data is true
   if (
     validate_fname &&
-    validate_sname &&
     validate_flastname &&
     validate_slastname &&
     validate_identification &&
@@ -108,12 +93,18 @@ exports.save = (req, res) => {
               const password_encrypt = hash;
 
               const user = {
-                fname: params.fname.charAt(0).toUpperCase() + params.fname.slice(1),
-                sname: params.sname.charAt(0).toUpperCase() + params.sname.slice(1),
-                flastname: params.flastname.charAt(0).toUpperCase() + params.flastname.slice(1),
-                slastname: params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
+                fname:
+                  params.fname.charAt(0).toUpperCase() + params.fname.slice(1),
+                sname:
+                  params.sname.charAt(0).toUpperCase() + params.sname.slice(1),
+                flastname:
+                  params.flastname.charAt(0).toUpperCase() +
+                  params.flastname.slice(1),
+                slastname:
+                  params.slastname.charAt(0).toUpperCase() +
+                  params.slastname.slice(1),
                 email: params.email.toLowerCase(),
-                password: params.password,
+                password: password_encrypt,
                 createdAt: moment().format("YYYY-MM-DD"),
                 updatedAt: moment().format("YYYY-MM-DD"),
                 identification: params.identification,
@@ -152,13 +143,14 @@ exports.save = (req, res) => {
 exports.login = (req, res) => {
   //collect the post parameters
   let params = req.body;
+
   //variables
   let validate_password, validate_email;
 
   //validate collected data
   try {
     validate_email =
-      !validator.isEmpty(params.email) && !validator.isEmail(params.email);
+      !validator.isEmpty(params.email) && validator.isEmail(params.email);
     validate_password = !validator.isEmpty(params.password);
   } catch (error) {
     return res.status(400).send({
@@ -171,7 +163,25 @@ exports.login = (req, res) => {
     User.count({ where: { email: params.email } }).then((count) => {
       if (count != 0) {
         //find the password saved in the database
-        User.findAll({ where: { email: params.email } })
+        User.findAll({
+          where: { email: params.email },
+          include: [
+            {
+              model: State,
+              as: "state",
+              include: [
+                {
+                  model: Colour,
+                  as: "colour",
+                },
+              ],
+            },
+            {
+              model: Type_idcard,
+              as: "type_idcard",
+            },
+          ],
+        })
           .then((data) => {
             //check that the password matches
             bcrypt.compare(params.password, data[0].password, (err, check) => {
@@ -183,6 +193,19 @@ exports.login = (req, res) => {
                 } else {
                   //clean the object and remove the password before returning it
                   data[0].password = undefined;
+                  data[0].fkuserType_idcard = undefined;
+                  data[0].fkuserState = undefined;
+                  data[0].createdAt = undefined;
+                  data[0].updatedAt = undefined;
+                  data[0].identification = undefined;
+                  data[0].state.createdAt = undefined;
+                  data[0].state.updatedAt = undefined;
+                  data[0].state.fkcolour_idstateColour = undefined;
+                  data[0].state.colour.createdAt = undefined;
+                  data[0].state.colour.updatedAt = undefined;
+                  data[0].type_idcard.createdAt = undefined;
+                  data[0].type_idcard.updatedAt = undefined;
+                  data[0].type_idcard.fktype_idcardState = undefined;
 
                   //return the data
                   res.send({ status: `success`, user: data });
@@ -228,11 +251,17 @@ exports.update = (req, res) => {
   const user = {
     fname: params.fname.charAt(0).toUpperCase() + params.fname.slice(1),
     sname: params.sname.charAt(0).toUpperCase() + params.sname.slice(1),
-    flastname: params.flastname.charAt(0).toUpperCase() + params.flastname.slice(1),
-    slastname: params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
+    flastname:
+      params.flastname.charAt(0).toUpperCase() + params.flastname.slice(1),
+    slastname:
+      params.slastname.charAt(0).toUpperCase() + params.slastname.slice(1),
     email: params.email.toLowerCase(),
-    fkUserState: params.idState,
-    updateAt: moment().format("YYYY-MM-DD"),
+    password: params.password,
+    updatedAt: moment().format("YYYY-MM-DD"),
+    identification: params.identification,
+    fkuserState: params.idState,
+    fkuserType_idcard: params.idtypeidcard,
+    //fkUserCargo: params.cargo
   };
 
   //validate the collected data
@@ -242,8 +271,10 @@ exports.update = (req, res) => {
     validate_flastname = !validator.isEmpty(params.flastname);
     validate_slastname = !validator.isEmpty(params.slastname);
     //validate_identification = !validator.isEmpty(params.identification);
-    validate_email =
-      !validator.isEmpty(params.email) && validator.isEmail(parmas.email);
+    //validate_email = !validator.isEmpty(params.email) && validator.isEmail(params.email);
+    //validate_password = !validator.isEmpty(params.password);
+    //validate_idState = !validator.isEmpty(params.idState);
+    //validate_idtypeidcard = !validator.isEmpty(params.idtypeidcard);
   } catch (error) {
     return res.status(400).send({
       message: "missing data to send",
@@ -251,13 +282,7 @@ exports.update = (req, res) => {
   }
 
   //Validate that all data is true
-  if (
-    validate_fname &&
-    validate_sname &&
-    validate_flastname &&
-    validate_slastname &&
-    validate_email
-  ) {
+  if (validate_fname && validate_flastname && validate_slastname) {
     User.update(user, { where: { iduser: id } })
       .then((num) => {
         if (num == 1) {
@@ -297,10 +322,28 @@ exports.findAll = (req, res) => {
       {
         model: State,
         as: "state",
+        include: [
+          {
+            model: Colour,
+            as: "colour",
+          },
+        ],
       },
       {
         model: Type_idcard,
-        as: 'type_idcard',
+        as: "type_idcard",
+        include: [
+          {
+            model: State,
+            as: "state",
+            include: [
+              {
+                model: Colour,
+                as: "colour",
+              },
+            ],
+          },
+        ],
       },
     ],
   })
@@ -318,14 +361,36 @@ exports.findAll = (req, res) => {
 //search user by id
 exports.findOne = (req, res) => {
   const id = req.params.id;
-  User.findByPk({
+  User.findByPk(id, {
     attributes: {
       exclude: ["password"],
     },
     include: [
       {
-        model: state,
-        as: "userstate",
+        model: State,
+        as: "state",
+        include: [
+          {
+            model: Colour,
+            as: "colour",
+          },
+        ],
+      },
+      {
+        model: Type_idcard,
+        as: "type_idcard",
+        include: [
+          {
+            model: State,
+            as: "state",
+            include: [
+              {
+                model: Colour,
+                as: "colour",
+              },
+            ],
+          },
+        ],
       },
     ],
   })
@@ -341,12 +406,44 @@ exports.findOne = (req, res) => {
 
 //search by identification
 exports.findIdentificacion = (req, res) => {
+  const { page, size } = req.query;
+  const { limit, offset } = getPagination(page, size);
+
   const search = req.params.search;
+  console.log(search);
   User.findAll({
     where: { identification: search },
     attributes: {
       exclude: ["password"],
-    }
+    },
+    include: [
+      {
+        model: State,
+        as: "state",
+        include: [
+          {
+            model: Colour,
+            as: "colour",
+          },
+        ],
+      },
+      {
+        model: Type_idcard,
+        as: "type_idcard",
+        include: [
+          {
+            model: State,
+            as: "state",
+            include: [
+              {
+                model: Colour,
+                as: "colour",
+              },
+            ],
+          },
+        ],
+      },
+    ],
   })
     .then((data) => {
       const response = getPagingData(data, page, limit);
@@ -361,16 +458,54 @@ exports.findIdentificacion = (req, res) => {
 
 //search by email
 exports.findEmail = (req, res) => {
-  const search = req.params.search;
+  const { page, size } = req.query;
+  const { limit, offset } = getPagination(page, size);
+
+  const email = req.params.email;
   User.findAll({
-    where: { email: search },
+    where: { email: email },
     attributes: {
       exclude: ["password"],
-    }
+    },
+    include: [
+      {
+        model: State,
+        as: "state",
+        include: [
+          {
+            model: Colour,
+            as: "colour",
+          },
+        ],
+      },
+      {
+        model: Type_idcard,
+        as: "type_idcard",
+        include: [
+          {
+            model: State,
+            as: "state",
+            include: [
+              {
+                model: Colour,
+                as: "colour",
+              },
+            ],
+          },
+        ],
+      },
+    ],
   })
     .then((data) => {
-      const response = getPagingData(data, page, limit);
-      res.send(response);
+      console.log(data);
+      if (data.length != 0) {
+        const response = getPagingData(data, page, limit);
+        res.send(response);
+      } else {
+        res.status(500).send({
+          message: `There are no matches with the Email: ${email} to search`,
+        });
+      }
     })
     .catch((err) => {
       res.status(500).send({

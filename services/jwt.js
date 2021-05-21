@@ -19,5 +19,6 @@ exports.createToken = function(user) {
 
   //console.log(payload);
 
-  return jwt.encode(payload, 'Meeys-Colombia-2021-token-generador-Luis-C anedo');
+  return jwt.encode(payload, 'Meeys-Colombia-2021-token-generador-Luis-Canedo');
+
 };

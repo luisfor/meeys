@@ -35,6 +35,7 @@ require('./routes/user')(app);
 require('./routes/state')(app);
 require('./routes/colour')(app);
 require('./routes/type_idcard')(app);
+require('./routes/grade')(app);
 
 // Port run Server
 const PORT = process.env.PORT || 3000;

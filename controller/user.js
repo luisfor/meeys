@@ -8,6 +8,7 @@ const User = db.user;
 const State = db.state;
 const Type_idcard = db.type_idcard;
 const Colour = db.colour;
+const Grade = db.grade;
 
 let validator = require("validator");
 
@@ -42,6 +43,7 @@ exports.save = (req, res) => {
     validate_password,
     validate_idState,
     validate_idtypeidcard;
+    validate_idGrade;
 
   //validate the collected data
   try {
@@ -55,6 +57,7 @@ exports.save = (req, res) => {
     validate_password = !validator.isEmpty(params.password);
     validate_idState = !validator.isEmpty(params.idState);
     validate_idtypeidcard = !validator.isEmpty(params.idtypeidcard);
+    validate_idGrade = !validator.isEmpty(params.idgrade);
   } catch (error) {
     return res.status(400).send({
       message: "missing data to send",
@@ -70,7 +73,8 @@ exports.save = (req, res) => {
     validate_email &&
     validate_password &&
     validate_idState &&
-    validate_idtypeidcard
+    validate_idtypeidcard &&
+    validate_idGrade
   ) {
     //
     User.count({
@@ -179,6 +183,10 @@ exports.login = (req, res) => {
             {
               model: Type_idcard,
               as: "type_idcard",
+            },
+            {
+              model: Grade,
+              as: "grade",
             },
           ],
         })
@@ -345,7 +353,10 @@ exports.findAll = (req, res) => {
           },
         ],
       },
-    ],
+      {
+        model: Grade,
+        as: "grade",
+      },],
   })
     .then((data) => {
       const response = getPagingData(data, page, limit);
@@ -391,6 +402,10 @@ exports.findOne = (req, res) => {
             ],
           },
         ],
+      },
+      {
+        model: Grade,
+        as: "grade",
       },
     ],
   })
@@ -443,6 +458,10 @@ exports.findIdentificacion = (req, res) => {
           },
         ],
       },
+      {
+        model: Grade,
+        as: "grade",
+      },
     ],
   })
     .then((data) => {
@@ -493,6 +512,10 @@ exports.findEmail = (req, res) => {
             ],
           },
         ],
+      },
+      {
+        model: Grade,
+        as: "grade",
       },
     ],
   })

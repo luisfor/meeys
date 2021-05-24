@@ -100,4 +100,12 @@ db.user.belongsTo(db.state, {
   as: 'state',
 });
 
+//table association user with grade fk
+db.user.belongsTo(db.grade, {
+  foreignKey: 'fkuserGrade',
+  as: 'grade',
+});
+
+
+
 module.exports = db;

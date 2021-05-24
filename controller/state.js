@@ -51,7 +51,6 @@ exports.save = (req, res) => {
       } else {
         const state = {
           name: params.name,
-          colour: params.colour,
           createdAt: moment().format("YYYY-MM-DD"),
           updatedAt: moment().format("YYYY-MM-DD"),
           fkcolour_idstateColour: params.idcolour,
@@ -73,7 +72,7 @@ exports.save = (req, res) => {
       }
     });
   } else {
-    return res.status().send({
+    return res.status(400).send({
       message: "missing data to send or a data is not valid.",
     });
   }
@@ -223,13 +222,14 @@ exports.delete = (req, res) => {
       } else {
         res.send({
           message: `
-                Cannot remove state with id = $ {id}. Maybe the state was not found!`,
+                Cannot remove state with id = ${id}. Maybe the state was not found!`,
         });
       }
     })
     .catch((error) => {
       res.status(500).send({
-        message: `Could not remove status with id ${id}`,
+        message: `Could not remove status with id = ${id}`,
       });
     });
 };
+

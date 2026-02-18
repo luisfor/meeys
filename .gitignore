@@ -1,7 +1,2 @@
-#dependencies
-/node_modules
-
-#production
-
-#database
-
+node_modules
+.env

@@ -1,83 +1,33 @@
-# MEYS - Sistema de Inventario de Activos Tecnológicos
+# Meys - Multi-Tenant SaaS Inventory System
 
-MEYS (Management software for Electronic equipment and sYStems) es un sistema integral para la gestión de inventario, activos tecnológicos y manejo de incidentes.
+**M**antenimiento de **E**quipos **E**lectrónicos **y** **S**istemas.
+Sistema de inventario genérico para empresas con arquitectura multi-tenant y catálogos híbridos.
 
-Este proyecto sigue una arquitectura de monorepo dividida en Frontend y Backend.
+## 🚀 Fases del Proyecto
+- [x] FASE 0 - Setup
+- [x] FASE 1 - Super Admin (Autenticación MEYS)
+- [x] FASE 2 - Gestión Avanzada Super Admin (CRUD UI, Perfiles Base64, Auditoría de Acciones, Borrado Lógico de Usuarios, UI Optimista)
+- [ ] FASE 3 - Empresas (Tenants)
+- [ ] FASE 4 - Autenticación Empresa
+- [ ] FASE 5 - Usuarios Empresa
+- [ ] FASE 6 - Inventario (Activos)
+- [ ] FASE 7 - Catálogos (Tipos, Categorías, Marcas)
+- [ ] FASE 8 - Mantenimientos Preventivos y Correctivos
+- [ ] FASE 9 - Documentación API
+- [ ] FASE 10 - Testing
+- [ ] FASE 11 - Deployment
 
-## Estructura del Proyecto
+## 🛠️ Stack Tecnológico
+**Backend**: Node.js, NestJS, Prisma ORM, PostgreSQL
+**Frontend**: React, Next.js, Tailwind CSS
 
-```
-AppInventory/
-├── backend/    # API RESTful con Node.js, Express y MySQL/MariaDB
-└── frontend/   # SPA moderna con React, TypeScript y TailwindCSS
-```
+## 📌 Progreso Actual
+Se ha completado la **Fase 2 (Gestión Avanzada Super Admin)**. 
+- Implementación de JWT reforzado.
+- CRUD Completo para administradores de MEYS.
+- UI Profesional (Modales transparentes, inputs de teléfono internacionales, avatares Base64).
+- Sistema de Soft Delete (Borrado Lógico) con Pestañas conmutables (Activos/Eliminados).
+- Registros de Auditoría (`audit_logs`) para acciones críticas y Restauración.
+- Manejo optimista de estados con UX ultra-rápida.
 
-## Requisitos Previos
-
-- **Node.js**: v18 o superior
-- **Base de Datos**: MySQL o MariaDB
-
-## 🚀 Guía de Inicio Rápido
-
-### 1. Configuración del Backend
-
-El backend maneja la lógica de negocio y la conexión a la base de datos.
-
-1.  Navega a la carpeta del backend:
-    ```bash
-    cd backend
-    ```
-2.  Instala las dependencias:
-    ```bash
-    npm install
-    ```
-3.  Configura las variables de entorno:
-    - Copia el archivo de ejemplo:
-      ```bash
-      cp .env.example .env
-      ```
-    - Edita `.env` con tus credenciales de base de datos local.
-4.  Inicia el servidor de desarrollo:
-    ```bash
-    npm run dev
-    ```
-    > El servidor correrá por defecto en `http://localhost:3000`.
-
-### 2. Configuración del Frontend
-
-El frontend es la interfaz de usuario construida con React y Vite.
-
-1.  Navega a la carpeta del frontend:
-    ```bash
-    cd frontend
-    ```
-2.  Instala las dependencias:
-    ```bash
-    npm install
-    ```
-3.  Inicia el servidor de desarrollo:
-    ```bash
-    npm run dev
-    ```
-    > Abre tu navegador en `http://localhost:5173`.
-
-## 🛠 Tecnologías Utilizadas
-
-### Backend
-- **Express**: Framework web rápido y minimalista.
-- **Sequelize**: ORM para bases de datos SQL.
-- **MySQL2**: Driver de MySQL.
-
-### Frontend
-- **React**: Biblioteca para construir interfaces de usuario.
-- **TypeScript**: Superset de JavaScript con tipado estático.
-- **Vite**: Herramienta de construcción frontend de próxima generación.
-- **TailwindCSS**: Framework de CSS para diseño rápido.
-
-## Contribución
-
-1.  Haz fork del repositorio.
-2.  Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).
-3.  Haz commit de tus cambios (`git commit -m 'Agrega nueva funcionalidad'`).
-4.  Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-5.  Abre un Pull Request.
+**Próximo paso:** Fase 3 (Empresas - Arquitectura Multi-tenant SaaS).

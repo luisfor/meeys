@@ -1,0 +1,111 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 23637, using available port 3001 instead.
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.1.3:3001
+- Environments: .env.local
+✓ Ready in 652ms
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+ GET /super-admin/dashboard 200 in 1808ms (next.js: 1267ms, proxy.ts: 69ms, application-code: 473ms)
+ GET /super-admin/dashboard 200 in 370ms (next.js: 238ms, proxy.ts: 45ms, application-code: 88ms)
+✓ Compiled in 0ms
+ GET /super-admin/dashboard 200 in 68ms (next.js: 3ms, proxy.ts: 3ms, application-code: 62ms)
+ GET /super-admin/dashboard 200 in 72ms (next.js: 4ms, proxy.ts: 5ms, application-code: 63ms)
+ GET /super-admin/dashboard 200 in 62ms (next.js: 4ms, proxy.ts: 3ms, application-code: 55ms)
+ GET /super-admin/dashboard 200 in 63ms (next.js: 4ms, proxy.ts: 3ms, application-code: 56ms)
+ GET /super-admin/dashboard 200 in 64ms (next.js: 3ms, proxy.ts: 3ms, application-code: 58ms)
+ GET /super-admin/dashboard 200 in 62ms (next.js: 1975µs, proxy.ts: 2ms, application-code: 57ms)
+ GET /super-admin/dashboard 200 in 47ms (next.js: 4ms, proxy.ts: 2ms, application-code: 41ms)
+ GET /super-admin/dashboard 200 in 47ms (next.js: 3ms, proxy.ts: 1968µs, application-code: 42ms)
+ GET /super-admin/dashboard 200 in 65ms (next.js: 5ms, proxy.ts: 3ms, application-code: 57ms)
+ GET /super-admin/dashboard 200 in 44ms (next.js: 5ms, proxy.ts: 3ms, application-code: 37ms)
+ GET /super-admin/dashboard 200 in 22ms (next.js: 2ms, proxy.ts: 2ms, application-code: 17ms)
+✓ Compiled in 121ms
+✓ Compiled in 85ms
+ GET /auth/login 404 in 2.6s (next.js: 2.4s, application-code: 197ms)
+ GET /super-admin/dashboard 200 in 148ms (next.js: 23ms, proxy.ts: 3ms, application-code: 121ms)
+○ Compiling /super-admin/settings/users ...
+ GET /super-admin/settings/users 200 in 24.8s (next.js: 22.9s, proxy.ts: 15ms, application-code: 1865ms)
+✓ Finished filesystem cache database compaction in 10.5s
+ GET /super-admin/dashboard 200 in 4.3s (next.js: 697ms, proxy.ts: 1749ms, application-code: 1875ms)
+ GET /super-admin/settings/users 200 in 5.4s (next.js: 800ms, proxy.ts: 1506ms, application-code: 3.1s)
+ GET /super-admin/dashboard 200 in 8.7s (next.js: 1846ms, proxy.ts: 1645ms, application-code: 5.2s)
+○ Compiling /login ...
+ GET /login 200 in 20.5s (next.js: 16.6s, proxy.ts: 1106ms, application-code: 2.8s)
+ GET /login 200 in 1459ms (next.js: 581ms, proxy.ts: 69ms, application-code: 809ms)
+ GET /login 200 in 4.0s (next.js: 1474ms, proxy.ts: 1110ms, application-code: 1438ms)
+ GET /login 200 in 5.6s (next.js: 713ms, proxy.ts: 945ms, application-code: 4.0s)
+ GET /login 200 in 588ms (next.js: 86ms, proxy.ts: 239ms, application-code: 263ms)
+ GET /login 200 in 118ms (next.js: 22ms, proxy.ts: 18ms, application-code: 78ms)
+ GET /login 200 in 63ms (next.js: 13ms, proxy.ts: 7ms, application-code: 43ms)
+ GET /login 200 in 296ms (next.js: 55ms, proxy.ts: 105ms, application-code: 136ms)
+ GET /login 200 in 72ms (next.js: 7ms, proxy.ts: 9ms, application-code: 55ms)
+ GET /super-admin/dashboard 200 in 320ms (next.js: 97ms, proxy.ts: 98ms, application-code: 124ms)
+ GET /super-admin/dashboard 200 in 51ms (next.js: 11ms, proxy.ts: 14ms, application-code: 26ms)
+ GET /super-admin/dashboard 200 in 72ms (next.js: 10ms, proxy.ts: 21ms, application-code: 41ms)
+✓ Compiled in 696ms
+ GET /super-admin/dashboard 200 in 176ms (next.js: 58ms, proxy.ts: 25ms, application-code: 94ms)
+ GET /super-admin/settings/users 200 in 30ms (next.js: 14ms, proxy.ts: 1495µs, application-code: 15ms)
+✓ Compiled in 1112ms
+ GET /super-admin/settings/users 200 in 2.1s (next.js: 2.0s, proxy.ts: 1672µs, application-code: 85ms)
+ GET /super-admin/settings/users 200 in 2.7s (next.js: 301ms, proxy.ts: 213ms, application-code: 2.2s)
+ GET /super-admin/settings/users 200 in 2.1s (next.js: 12ms, proxy.ts: 3ms, application-code: 2.1s)
+✓ Compiled in 401ms
+ GET /super-admin/settings/users 200 in 495ms (next.js: 126ms, proxy.ts: 94ms, application-code: 275ms)
+ GET /super-admin/settings/users 200 in 236ms (next.js: 185ms, proxy.ts: 7ms, application-code: 43ms)
+ GET /super-admin/settings/users 200 in 435ms (next.js: 11ms, proxy.ts: 158ms, application-code: 266ms)
+ GET /super-admin/settings/users 200 in 36ms (next.js: 6ms, proxy.ts: 14ms, application-code: 17ms)
+ GET /super-admin/settings/users 200 in 31ms (next.js: 1536µs, proxy.ts: 2ms, application-code: 27ms)
+✓ Compiled in 398ms
+ GET /super-admin/settings/users 200 in 431ms (next.js: 99ms, proxy.ts: 93ms, application-code: 239ms)
+ GET /super-admin/settings/users 200 in 193ms (next.js: 14ms, proxy.ts: 151ms, application-code: 28ms)
+ GET /super-admin/settings/users 200 in 345ms (next.js: 138ms, proxy.ts: 3ms, application-code: 203ms)
+ GET /super-admin/companies 404 in 178ms (next.js: 66ms, proxy.ts: 54ms, application-code: 59ms)
+ GET /super-admin/companies 404 in 38ms (next.js: 9ms, proxy.ts: 1734µs, application-code: 27ms)
+ GET /super-admin/dashboard 200 in 190ms (next.js: 50ms, proxy.ts: 11ms, application-code: 130ms)
+ GET /super-admin/companies 404 in 74ms (next.js: 11ms, proxy.ts: 12ms, application-code: 51ms)
+ GET /super-admin/companies 404 in 57ms (next.js: 14ms, proxy.ts: 5ms, application-code: 38ms)
+ GET /super-admin/dashboard 200 in 57ms (next.js: 3ms, proxy.ts: 4ms, application-code: 49ms)
+ GET /super-admin/settings/users 200 in 47ms (next.js: 6ms, proxy.ts: 12ms, application-code: 29ms)
+✓ Compiled in 253ms
+ GET /super-admin/settings/users 200 in 107ms (next.js: 25ms, proxy.ts: 21ms, application-code: 60ms)
+✓ Compiled in 848ms
+✓ Compiled in 252ms
+✓ Compiled in 1051ms
+ GET /super-admin/settings/users 200 in 417ms (next.js: 242ms, proxy.ts: 129ms, application-code: 46ms)
+✓ Compiled in 732ms
+✓ Compiled in 722ms
+ GET /super-admin/settings/users 200 in 1115ms (next.js: 411ms, proxy.ts: 418ms, application-code: 286ms)
+ GET /super-admin/settings/users 200 in 130ms (next.js: 11ms, proxy.ts: 23ms, application-code: 96ms)
+ GET /super-admin/dashboard 200 in 589ms (next.js: 200ms, proxy.ts: 82ms, application-code: 307ms)
+ GET /login 200 in 359ms (next.js: 56ms, proxy.ts: 38ms, application-code: 265ms)
+ GET /super-admin/dashboard 200 in 110ms (next.js: 21ms, proxy.ts: 19ms, application-code: 71ms)
+ GET /super-admin/settings/users 200 in 200ms (next.js: 36ms, proxy.ts: 31ms, application-code: 133ms)
+✓ Compiled in 998ms
+✓ Compiled in 1298ms
+✓ Compiled in 308ms
+ GET /super-admin/settings/users 200 in 7.9s (next.js: 4.2s, proxy.ts: 450ms, application-code: 3.3s)
+ GET /super-admin/settings/users 200 in 8.1s (next.js: 6.6s, proxy.ts: 33ms, application-code: 1385ms)
+ GET /super-admin/settings/users 200 in 1348ms (next.js: 516ms, proxy.ts: 271ms, application-code: 561ms)
+ GET /super-admin/settings/users 200 in 1331ms (next.js: 136ms, proxy.ts: 14ms, application-code: 1181ms)
+ GET /super-admin/settings/users 200 in 951ms (next.js: 82ms, proxy.ts: 19ms, application-code: 851ms)
+ GET /super-admin/settings/users 200 in 991ms (next.js: 46ms, proxy.ts: 20ms, application-code: 926ms)
+ GET /super-admin/settings/users 200 in 988ms (next.js: 366ms, proxy.ts: 23ms, application-code: 599ms)
+ GET /super-admin/settings/users 200 in 411ms (next.js: 42ms, proxy.ts: 73ms, application-code: 296ms)
+ GET /super-admin/dashboard 200 in 1825ms (next.js: 307ms, proxy.ts: 339ms, application-code: 1179ms)
+ GET /super-admin/settings/users 200 in 2.5s (next.js: 391ms, proxy.ts: 82ms, application-code: 1986ms)
+ GET /super-admin/dashboard 200 in 3.9s (next.js: 1471ms, proxy.ts: 1621ms, application-code: 808ms)
+ GET /super-admin/settings/users 200 in 4.1s (next.js: 237ms, proxy.ts: 171ms, application-code: 3.7s)
+ GET /super-admin/dashboard 200 in 4.8s (next.js: 734ms, proxy.ts: 3.2s, application-code: 902ms)
+ GET /super-admin/settings/users 200 in 1440ms (next.js: 604ms, proxy.ts: 351ms, application-code: 485ms)
+ GET /super-admin/settings/users 200 in 1187ms (next.js: 180ms, proxy.ts: 414ms, application-code: 593ms)
+✓ Compiled in 2.4s
+ GET /super-admin/settings/users 200 in 679ms (next.js: 231ms, proxy.ts: 232ms, application-code: 217ms)
+ GET /super-admin/settings/users 200 in 233ms (next.js: 15ms, proxy.ts: 13ms, application-code: 206ms)
+ GET /super-admin/settings/users 200 in 117ms (next.js: 11ms, proxy.ts: 15ms, application-code: 91ms)
+ GET /super-admin/dashboard 200 in 947ms (next.js: 285ms, proxy.ts: 61ms, application-code: 601ms)
+ GET /super-admin/settings/users 200 in 745ms (next.js: 548ms, proxy.ts: 57ms, application-code: 139ms)

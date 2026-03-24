@@ -1,0 +1,1276 @@
+
+> backend@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m9:17:55 PM[0m] Starting compilation in watch mode...
+
+[[90m9:17:58 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +16ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +16ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23637  - [39m03/23/2026, 9:17:59 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +91ms[39m
+[2J[3J[H[[90m11:05:57 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:06:00 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +77ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +224ms[39m
+[31m[Nest] 46487  - [39m03/23/2026, 11:06:02 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +11ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:31:01 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:03 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m11:31:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[96msrc/admin/users/users.service.ts[0m:[93m85[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'UpdateSuperAdminDto'.
+
+[7m85[0m         fullName: updateDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:07 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:07 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[[90m11:31:08 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:10 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:11 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:12 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:12 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:30 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:31 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:32:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:32:03 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +23ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +54ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +15ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54093  - [39m03/23/2026, 11:32:07 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +236ms[39m
+[31m[Nest] 54093  - [39m03/23/2026, 11:32:07 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +6ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:50:12 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:50:18 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:20 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +78ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +73ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +19ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +39ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +362ms[39m
+[31m[Nest] 55989  - [39m03/23/2026, 11:50:21 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +44ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:56:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:26 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:56:26 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:27 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +60ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +5ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +157ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +20ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +28ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/deleted, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/restore, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57286  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +334ms[39m
+[31m[Nest] 57286  - [39m03/23/2026, 11:56:37 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +24ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+                                [2J[3J[H[[90m11:05:57 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:05:59 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +64ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 46412  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +243ms[39m
+[2J[3J[H[[90m11:31:01 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:03 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m11:31:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[96msrc/admin/users/users.service.ts[0m:[93m85[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'UpdateSuperAdminDto'.
+
+[7m85[0m         fullName: updateDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:04 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:07 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[[90m11:31:08 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:10 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:10 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:12 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:12 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:30 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:31 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:32:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:32:03 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +67ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +12ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54096  - [39m03/23/2026, 11:32:07 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +231ms[39m
+[31m[Nest] 54096  - [39m03/23/2026, 11:32:07 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +7ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:50:12 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:50:15 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:20 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +41ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +116ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55968  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +400ms[39m
+[2J[3J[H[[90m11:56:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:27 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:56:27 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:31 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +45ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +4ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +82ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +15ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/deleted, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +17ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/restore, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +196ms[39m
+[31m[Nest] 57327  - [39m03/23/2026, 11:56:37 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +21ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+/:id, GET} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 55990  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +18ms[39m
+[32m[Nest] 55990  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +17ms[39m
+[32m[Nest] 55990  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +30ms[39m
+[32m[Nest] 55990  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +345ms[39m
+[31m[Nest] 55990  - [39m03/23/2026, 11:50:21 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +16ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:56:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:25 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:56:26 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:27 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +52ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +34ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +6ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +127ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +18ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/deleted, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/restore, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:36 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57255  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +312ms[39m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [2J[3J[H[[90m11:05:55 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:05:56 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +60ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +240ms[39m
+[31m[Nest] 46239  - [39m03/23/2026, 11:06:02 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +84ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:31:01 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:03 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m11:31:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'CreateSuperAdminDto'.
+
+[7m30[0m         fullName: createDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[96msrc/admin/users/users.service.ts[0m:[93m85[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'fullName' does not exist on type 'UpdateSuperAdminDto'.
+
+[7m85[0m         fullName: updateDto.fullName,
+[7m  [0m [91m                            ~~~~~~~~[0m
+
+[[90m11:31:04 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:07 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[[90m11:31:08 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:10 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:10 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:12 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:12 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:31:30 PM[0m] File change detected. Starting incremental compilation...
+
+[96mprisma/seed.ts[0m:[93m32[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m32[0m         firstName: 'Global',
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m2028[0m:[93m5[0m
+    [7m2028[0m     create: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'create' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; create: (Without<...> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); update: (Without<...> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m30[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput)'.
+
+[7m30[0m         firstName: createDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1910[0m:[93m5[0m
+    [7m1910[0m     data: XOR<UserCreateInput, UserUncheckedCreateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserCreateInput, UserUncheckedCreateInput> & UserUncheckedCreateInput) | (Without<...> & UserCreateInput); }'
+
+[96msrc/admin/users/users.service.ts[0m:[93m86[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type '(Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput)'.
+
+[7m86[0m         firstName: updateDto.firstName,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1958[0m:[93m5[0m
+    [7m1958[0m     data: XOR<UserUpdateInput, UserUncheckedUpdateInput>
+    [7m    [0m [96m    ~~~~[0m
+    The expected type comes from property 'data' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; data: (Without<UserUpdateInput, UserUncheckedUpdateInput> & UserUncheckedUpdateInput) | (Without<...> & UserUpdateInput); where: UserWhereUniqueInput; }'
+
+[96msrc/profile/profile.service.ts[0m:[93m18[0m:[93m9[0m - [91merror[0m[90m TS2353: [0mObject literal may only specify known properties, and 'firstName' does not exist in type 'UserSelect<DefaultArgs>'.
+
+[7m18[0m         firstName: true,
+[7m  [0m [91m        ~~~~~~~~~[0m
+
+  [96mnode_modules/.prisma/client/index.d.ts[0m:[93m1722[0m:[93m5[0m
+    [7m1722[0m     select?: UserSelect<ExtArgs> | null
+    [7m    [0m [96m    ~~~~~~[0m
+    The expected type comes from property 'select' which is declared here on type '{ select?: UserSelect<DefaultArgs> | null | undefined; omit?: UserOmit<DefaultArgs> | null | undefined; where: UserWhereUniqueInput; }'
+
+[[90m11:31:31 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:32:01 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:32:03 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +23ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +55ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +7ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:06 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 54094  - [39m03/23/2026, 11:32:07 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +230ms[39m
+[31m[Nest] 54094  - [39m03/23/2026, 11:32:07 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +9ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:15:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:50:12 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:50:18 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:20 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +90ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +60ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +46ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +28ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +361ms[39m
+[31m[Nest] 55991  - [39m03/23/2026, 11:50:21 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +23ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:56:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:29 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:56:29 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:35 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +31ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +41ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +9ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +9ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/deleted, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/restore, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +109ms[39m
+[31m[Nest] 57395  - [39m03/23/2026, 11:56:38 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +7ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+tion...[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +57ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +162ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +37ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +208ms[39m
+[31m[Nest] 55993  - [39m03/23/2026, 11:50:21 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +9ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
+[2J[3J[H[[90m11:56:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:28 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m11:56:28 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m11:56:32 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +39ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuditModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +38ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +7ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfileController {/profile}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/me, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/profile/superadmin-only, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/admin/users}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/deleted, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/toggle, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id/restore, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/admin/users/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +182ms[39m
+[31m[Nest] 57344  - [39m03/23/2026, 11:56:37 PM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3000[39m[38;5;3m +20ms[39m
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/platform-express/adapters/express-adapter.js:127:32)
+    at /Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (/Users/luis/Desktop/Workspaces/AppInventory/backend/node_modules/@nestjs/core/nest-application.js:178:16)
+    at async bootstrap (/Users/luis/Desktop/Workspaces/AppInventory/backend/src/main.ts:19:3) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v25.2.1
